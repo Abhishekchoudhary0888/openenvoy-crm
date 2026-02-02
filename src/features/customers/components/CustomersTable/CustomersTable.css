@@ -1,0 +1,105 @@
+.customers-table-container {
+  background: #fff;
+  border-radius: 24px;
+  margin: 0 40px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+}
+
+.customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 0 24px;
+  table-layout: fixed;
+}
+
+.customers-table thead th {
+  text-align: left;
+  padding: 12px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #B5B7C0;
+  border-bottom: 1px solid #EEEEEE;
+}
+
+/* Fixed column widths to prevent shifting during sort */
+.customers-table thead th:nth-child(1) { width: 18%; } /* Customer Name */
+.customers-table thead th:nth-child(2) { width: 18%; } /* Company */
+.customers-table thead th:nth-child(3) { width: 15%; } /* Phone Number */
+.customers-table thead th:nth-child(4) { width: 22%; } /* Email */
+.customers-table thead th:nth-child(5) { width: 15%; } /* Country */
+.customers-table thead th:nth-child(6) { width: 12%; } /* Status */
+
+.customers-table tbody td {
+  padding: 20px 24px;
+  font-size: 14px;
+  color: #292D32;
+  border-bottom: 1px solid #EEEEEE;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.customers-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Empty state for search results (inline table message) */
+.empty-state {
+  text-align: center;
+  color: #9197B3;
+  padding: 40px 12px !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .customers-table-container {
+    margin: 0 20px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .customers-table-container {
+    margin: 0 20px 20px;
+    border-radius: 16px;
+    overflow-x: auto;
+  }
+
+  .customers-table {
+    min-width: 650px;
+    padding: 0 16px;
+  }
+
+  .customers-table thead th {
+    font-size: 12px;
+    padding: 10px 8px;
+  }
+
+  .customers-table tbody td {
+    font-size: 12px;
+    padding: 16px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .customers-table-container {
+    margin: 0 16px 16px;
+    border-radius: 12px;
+  }
+
+  .customers-table {
+    min-width: 600px;
+    padding: 0 12px;
+  }
+
+  .customers-table thead th {
+    font-size: 11px;
+    padding: 8px 6px;
+  }
+
+  .customers-table tbody td {
+    font-size: 11px;
+    padding: 12px 6px;
+  }
+}
+

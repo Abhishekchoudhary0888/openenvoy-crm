@@ -1,0 +1,14 @@
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  gap: 16px;
+}
+
+.loading-state-message {
+  font-size: 14px;
+  color: #9197B3;
+  margin: 0;
+}

@@ -1,0 +1,39 @@
+/* SearchBar Base Styles */
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-bar .icon {
+  position: absolute;
+  left: 12px;
+  z-index: 1;
+  color: #9197B3;
+}
+
+.search-bar .search-input {
+  padding-left: 36px;
+}
+
+.search-bar .search-input:focus + .icon {
+  color: #5932EA;
+}
+
+/* SearchBar Sizes */
+.search-bar-small .search-input {
+  padding-left: 32px;
+}
+
+.search-bar-small .icon {
+  left: 10px;
+}
+
+.search-bar-large .search-input {
+  padding-left: 40px;
+}
+
+.search-bar-large .icon {
+  left: 14px;
+}

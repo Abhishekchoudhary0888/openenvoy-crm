@@ -1,0 +1,51 @@
+.select {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-family: inherit;
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L6 6L11 1' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+}
+
+.select:hover {
+  border-color: #c0c0c0;
+}
+
+.select:focus {
+  border-color: #5932EA;
+  box-shadow: 0 0 0 3px rgba(89, 50, 234, 0.1);
+}
+
+.select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Size variants */
+.select-small {
+  padding: 6px 10px;
+  padding-right: 32px;
+  font-size: 12px;
+}
+
+.select-medium {
+  padding: 8px 12px;
+  padding-right: 36px;
+  font-size: 14px;
+}
+
+.select-large {
+  padding: 10px 14px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+

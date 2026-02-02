@@ -1,0 +1,84 @@
+/* Button Base Styles */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:focus-visible {
+  box-shadow: 0 0 0 2px #5932EA;
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Button Variants */
+.btn-primary {
+  background: #5932EA;
+  color: #fff;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #4c2bc7;
+}
+
+.btn-secondary {
+  background: #F5F5F5;
+  color: #404B52;
+  border: 1px solid #EEEEEE;
+}
+
+.btn-secondary:hover:not(:disabled) {
+  background: #e5e5e5;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #5932EA;
+  border: 1px solid #5932EA;
+}
+
+.btn-outline:hover:not(:disabled) {
+  background: #5932EA;
+  color: #fff;
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #5932EA;
+}
+
+.btn-ghost:hover:not(:disabled) {
+  background: #f0f0ff;
+}
+
+/* Button Sizes */
+.btn-small {
+  padding: 6px 12px;
+  font-size: 12px;
+  height: 28px;
+}
+
+.btn-medium {
+  padding: 10px 16px;
+  font-size: 14px;
+  height: 36px;
+}
+
+.btn-large {
+  padding: 14px 24px;
+  font-size: 16px;
+  height: 44px;
+}

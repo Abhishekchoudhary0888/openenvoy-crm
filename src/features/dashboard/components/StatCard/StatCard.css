@@ -1,0 +1,106 @@
+/* StatCard Base Styles */
+.stat-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  display: flex;
+  gap: 16px;
+  flex: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+.stat-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.stat-icon-total-customers {
+  background: #D4F5E9;
+}
+
+.stat-icon-members {
+  background: #FFE4E8;
+}
+
+.stat-icon-active-now {
+  background: #F4E8FF;
+}
+
+.stat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.stat-title {
+  font-size: 14px;
+  color: #9197B3;
+  font-weight: 400;
+}
+
+.stat-value {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000;
+  line-height: 1.2;
+}
+
+.stat-trend {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+  font-weight: 500;
+}
+
+.trend-highlight {
+  display: inline-flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.trend-highlight.trend-up {
+  color: #00AC69;
+}
+
+.trend-highlight.trend-down {
+  color: #D0004B;
+}
+
+.trend-icon {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.trend-text {
+  color: #9197B3;
+  margin-left: 2px;
+}
+
+.stat-avatars {
+  display: flex;
+}
+
+.stat-avatars .avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin-left: -8px;
+}
+
+.stat-avatars .avatar:first-child {
+  margin-left: 0;
+}

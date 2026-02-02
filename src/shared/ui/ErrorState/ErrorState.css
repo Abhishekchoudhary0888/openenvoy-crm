@@ -1,0 +1,48 @@
+.error-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.error-state-icon {
+  font-size: 64px;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.error-state-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #D0004B;
+  margin: 0 0 8px 0;
+}
+
+.error-state-message {
+  font-size: 14px;
+  color: #666;
+  margin: 0 0 24px 0;
+  max-width: 400px;
+}
+
+.error-state-retry {
+  background: #5932EA;
+  color: white;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.error-state-retry:hover {
+  background: #4621C7;
+}
+
+.error-state-retry:active {
+  transform: scale(0.98);
+}
